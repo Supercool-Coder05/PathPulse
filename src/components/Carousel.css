@@ -1,0 +1,6 @@
+
+  
+  .slick-slide:not(.slick-center) .card {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
