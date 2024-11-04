@@ -30,6 +30,7 @@ export default {
         'gradient-end': '#03855C',
         'customStart': '#79F5E9',
         'customEnd': '#02C394',
+        'footerColor': 'rgba(255, 255, 255, 0.5)',
       },
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],

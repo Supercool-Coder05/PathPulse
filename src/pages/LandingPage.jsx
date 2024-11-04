@@ -4,6 +4,7 @@ import "../components/services.css";
 
 import React, { useState, useEffect } from "react";
 import Carousel from "../components/Carousel";
+import Footer from "../components/footer";
 
 const cardData = [
   {
@@ -98,7 +99,7 @@ const LandingPage = () => {
     <div className="bg-primary relative">
       <div className="relative min-h-screen">
         {/* header */}
-        <div className="absolute w-full ">
+        <div className="z-30 absolute w-full ">
           <Header />
         </div>
 
@@ -106,7 +107,7 @@ const LandingPage = () => {
         <div className="absolute inset-0 flex items-center justify-center z-20 -mt-36">
           <div className="text-white flex flex-col items-center justify-center">
             <div className="relative">
-              <div className="absolute w-full text-[110px] font-clash select-none"
+              {/* <div className="absolute w-full text-[110px] font-clash select-none"
                    style={{
                      opacity: 0.4,
                      background: 'linear-gradient(180deg, #FFF 2.39%, #83DBC9 91.52%)',
@@ -117,7 +118,7 @@ const LandingPage = () => {
                      fontFamily: 'Clash Display Variable',
                    }}>
                 Rerouting the Future
-              </div>
+              </div> */}
               <div className="text-[96px] font-clash relative"
                    style={{
                      background: 'linear-gradient(180deg, #FFF 2.39%, #83DBC9 91.52%)',
@@ -197,7 +198,7 @@ const LandingPage = () => {
 
       {/* About us section */}
 
-      <div className="relative mt-28 min-h-screen  text-white ">
+      <div id="about" className="relative mt-28 min-h-screen text-white">
         {/* Header Section */}
         <div className="flex flex-col justify-center items-center mb-16">
           <h1 className="text-[60px] font-clash font-semibold mb-4" style={{
@@ -259,7 +260,7 @@ const LandingPage = () => {
         </div>
 
         {/* Decorative Image */}
-        <div className="absolute overflow-hidden w-[400px] h-[756px] right-0 top-1/2 -translate-y-1/2">
+        <div className="absolute overflow-hidden w-[356px] h-[756px] right-0 top-1/2 -translate-y-1/2">
           <img
             src="/p.svg"
             alt="Decorative pattern"
@@ -270,7 +271,7 @@ const LandingPage = () => {
 
       {/* our solution section */}
 
-      <div className="relative  mt-28 min-h-screen text-white bg-[url('/background.svg')] bg-cover">
+      <div id="solutions" className="relative mt-28 min-h-screen text-white  bg-cover">
         <div className="flex flex-col justify-center items-center mb-16">
           <h1 className="text-[60px] font-clash mb-4"style={{
                      background: 'linear-gradient(180deg, #FFF 2.39%, #83DBC9 91.52%)',
@@ -289,7 +290,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className="flex items-start justify-center p-4">
+        {/* <div className="flex items-start justify-center p-4">
           <div className="carousel-container">
             <div
               className="carousel"
@@ -320,7 +321,13 @@ const LandingPage = () => {
               <img src="/rightarrow.svg" alt="" className="h-10 w-10" />
             </button>
           </div>
+        </div> */}
+
+        <div className="flex justify-center mx-[20px] items-center">
+
+          <img src="/solution.svg" alt="solutions" className=" w-auto h-auto items-center" />
         </div>
+
       </div>
 
       {/* Join our community */}
@@ -343,7 +350,7 @@ const LandingPage = () => {
 
       {/* Our Tech Section */}
 
-      <div className="relative mt-28 min-h-screen text-white">
+      <div id="tech" className="relative mt-28 min-h-screen text-white">
         <div className="flex flex-col justify-center items-center mb-16">
           <h1 className="text-[60px] font-clash mb-4" style={{
                      background: 'linear-gradient(180deg, #FFF 2.39%, #83DBC9 91.52%)',
@@ -370,30 +377,27 @@ const LandingPage = () => {
 
       {/* join our Network */}
       <div className="relative overflow-hidden min-h-screen text-white">
+        {/* Background with map */}
         <div className="absolute inset-0 w-full h-full bg-[url('/map.svg')] bg-cover bg-center bg-no-repeat" style={{
           mask: 'radial-gradient(circle at center, black 50%, transparent 100%)',
           WebkitMask: 'radial-gradient(circle at center, black 50%, transparent 100%)'
         }}>
+          {/* Content */}
+          <div className="flex gap-x-[160px] justify-center items-center">
+            <div className="-mt-32 flex flex-col">
+              <p className="text-[60px]  font-clash"style={{
+                       background: 'linear-gradient(180deg, #FFF 2.39%, #83DBC9 91.52%)',
+                       backgroundClip: 'text',
+                       WebkitBackgroundClip: 'text',
+                       WebkitTextFillColor: 'transparent',
+                     }} >Are You A </p>
+              <button className="transform -translate-x-2 flex items-center text-white py-2 justify-center w-[235px] px-6 rounded-[99px] border border-white">
+                <span className="font-satoshi text-[16px] font-medium">Join Our Network</span>
+                <img src="/longrightarrow.svg" alt="Arrow Right" className=" ml-2 h-2 w-12" />
+              </button>
+            </div>
 
-          <div className="flex gap-x-[160px]  justify-center items-center">
-
-
-          <div className="-mt-32 flex flex-col">
-            <p className="text-[60px]  font-clash"style={{
-                     background: 'linear-gradient(180deg, #FFF 2.39%, #83DBC9 91.52%)',
-                     backgroundClip: 'text',
-                     WebkitBackgroundClip: 'text',
-                     WebkitTextFillColor: 'transparent',
-                   }} >Are You A </p>
-            <button className="transform -translate-x-2 flex items-center text-white py-2 justify-center w-[235px] px-6 rounded-[99px] border border-white">
-              <span className="font-satoshi text-[16px] font-medium">Join Our Network</span>
-              <img src="/longrightarrow.svg" alt="Arrow Right" className=" ml-2 h-2 w-12" />
-            </button>
-          </div>
-
-
-
-          <div className="flex ">
+            <div className="flex ">
               <div className=" w-[500px] h-[900px] mt-[150px] relative">
                 {cards.map((card, index) => {
                   const position = cardPositions[index];
@@ -403,7 +407,7 @@ const LandingPage = () => {
                       className="absolute w-full transition-all duration-500"
                       style={{
                         transform: `translateY(${position * 220}px)`,
-                        opacity: position === 3 ? 0 : 1,
+                        opacity: position === 2 ? 0.3 : position === 3 ? 0 : 1,
                       }}
                     >
                       <div className="overflow-hidden bg-complex-gradient w-[450px] h-[200.89px] gap-[47.82px] rounded-[38.26px] border-t-[1.59px] m-2">
@@ -437,14 +441,20 @@ const LandingPage = () => {
 
 
           </div>
-
-         
         </div>
+
+        {/* Bottom fade overlay */}
+        <div 
+          className="absolute bottom-0 left-0 w-full h-[300px] pointer-events-none"
+          style={{
+            background: 'linear-gradient(to bottom, transparent, #081716 90%)'
+          }}
+        />
       </div>
 
 
-      {/* footer */}
-      <div className="relative mt-28  text-white">
+      {/* image to perform fade  */}
+      {/* <div className="relative mt-28  text-white">
         <img 
           src="/footer.svg"
           alt="Footer background"
@@ -454,7 +464,12 @@ const LandingPage = () => {
            
           }}
         />.
-      </div>
+      </div> */}
+
+      {/* Footer */}
+          <div className="mt-28">
+      <Footer/>
+          </div>
     </div>
   );
 };
