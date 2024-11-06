@@ -32,7 +32,7 @@ const Carousel = () => {
         link: 'https://pathpulse-ai.gitbook.io/pathpulse.ai-whitepaper/core-offerings/introducing-pulsenet-advanced-artificial-intelligence',
         contentHeading: "PulseNet:  Advanced Artificial Intelligence",
         content:
-          "It takes problem-solving and decision-making to unprecedented heights.",
+          "takes problem-solving and decision-making to unprecedented heights.",
       },
       {
         id: 2,

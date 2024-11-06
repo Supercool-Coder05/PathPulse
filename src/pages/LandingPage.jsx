@@ -55,26 +55,26 @@ const LandingPage = () => {
   const cards = [
     {
       id: 1,
-      contentHeading: "City official",
-      content: "Looking to optimise operations?",
+      contentHeading: "City Official",
+      content: "looking to optimise operations?",
       image: "/Government.svg",
     },
     {
       id: 2,
       contentHeading: "Fleet Owner",
-      content: "Aiming to improve services?",
+      content: "aiming to improve services?",
       image: "/Fleet.svg",
     },
     {
       id: 3,
-      contentHeading: "Tech innovator",
+      contentHeading: "Tech Innovator",
       content: "with complementary solutions?",
       image: "/Programmer.svg",
     },
     {
       id: 4,
       contentHeading: "Driver",
-      content: "Looking for better maps?",
+      content: "looking for better maps?",
       image: "/Race.svg",
     },
   ];
@@ -117,7 +117,7 @@ const LandingPage = () => {
                      filter: 'blur(10px)',
                      fontFamily: 'Clash Display Variable',
                    }}>
-                Rerouting the Future
+                Rerouting The Future
               </div> */}
               <div className="text-[96px] font-clash relative"
                    style={{
@@ -126,7 +126,7 @@ const LandingPage = () => {
                      WebkitBackgroundClip: 'text',
                      WebkitTextFillColor: 'transparent',
                    }}>
-                Rerouting the Future
+                Rerouting The Future
               </div>
             </div>
             <div className="text-[35px] font-satoshi mb-8" 
@@ -215,7 +215,7 @@ const LandingPage = () => {
               alt="star icon"
             />
             <p className="text-[30px] font-clash  ">
-              Revolutionalizing Urban Intelligence
+              Revolutionalising Urban Intelligence
             </p>
           </div>
         </div>
@@ -366,7 +366,7 @@ const LandingPage = () => {
               alt="star icon"
             />
           <p className="text-[30px] font-clash text-white">
-              What makes our AI Special
+              What Makes Our AI Special
             </p>
           </div>
         </div>

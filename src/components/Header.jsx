@@ -50,7 +50,7 @@ const Header = () => {
             className='text-[14.12px] font-satoshi text-white cursor-pointer hover:opacity-80'
             onClick={() => scrollToSection('tech')}
           >
-            Our tech
+            Our Tech
           </button>
         </div>
       </div>
