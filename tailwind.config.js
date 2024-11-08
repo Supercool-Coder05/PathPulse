@@ -31,12 +31,14 @@ export default {
         'customStart': '#79F5E9',
         'customEnd': '#02C394',
         'footerColor': 'rgba(255, 255, 255, 0.5)',
+        'customBorder': 'rgba(255, 255, 255, 0.20)',
       },
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],
         clash: ['ClashDisplayVariable', 'sans-serif'],
       },
       backgroundColor: {
+        'sidebar-bg': 'rgba(16, 39, 37, 0.80)',
         'conic-fill': 'conic-gradient(from 0deg, rgba(0, 0, 0, 0) 48%, #093728 78%, #093728 100%)',
         'button-gradient': `conic-gradient(
           from 181deg at 50% 50%,
