@@ -266,7 +266,7 @@ const LandingPage = () => {
             }}
             className="text-[32px] mx-auto md:text-[40pxpx]  font-clash "
           >
-            Comimg Soon!
+            Coming Soon!
           </p>
           <img
             src="/mobImage.svg"
